@@ -1,1 +1,73 @@
-$clr-primary-light: #23d37f;
+@use "reset";
+$clr-primary-light: hsl(151, 71%, 48%);
+$clr-primary-light-hover: hsl(151, 71%, 48%, 0.65);
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+.calculator {
+  width: 80vw;
+  max-width: 23.475rem;
+  border: 0.35rem solid #333;
+  box-shadow: 1.75rem -1.75rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 2.5rem;
+  overflow: hidden;
+
+  .screen {
+    height: 15.625rem;
+
+    > * {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 50%;
+      padding-inline: 2rem;
+    }
+
+    &__top {
+      font-size: 2.75rem;
+    }
+
+    &__bottom {
+      font-size: 4.25rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  button {
+    height: 5rem;
+    font-size: 2.2rem;
+  }
+
+  .btn-operation {
+    background-color: $clr-primary-light;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background-color: $clr-primary-light-hover;
+    }
+  }
+
+  .btn-number {
+    background: none;
+
+    &:hover,
+    &:focus {
+      background-color: $clr-primary-light-hover;
+      color: white;
+    }
+  }
+
+  .zero {
+    grid-column: span 2;
+  }
+}

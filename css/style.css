@@ -1,0 +1,131 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin and padding
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+.calculator {
+  width: 80vw;
+  max-width: 23.475rem;
+  border: 0.35rem solid #333;
+  box-shadow: 1.75rem -1.75rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 2.5rem;
+  overflow: hidden;
+}
+.calculator .screen {
+  height: 15.625rem;
+}
+.calculator .screen > * {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50%;
+  padding-inline: 2rem;
+}
+.calculator .screen__top {
+  font-size: 2.75rem;
+}
+.calculator .screen__bottom {
+  font-size: 4.25rem;
+  padding-bottom: 3rem;
+}
+.calculator .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.calculator button {
+  height: 5rem;
+  font-size: 2.2rem;
+}
+.calculator .btn-operation {
+  background-color: hsl(151, 71%, 48%);
+  color: white;
+}
+.calculator .btn-operation:hover, .calculator .btn-operation:focus {
+  background-color: hsla(151, 71%, 48%, 0.65);
+}
+.calculator .btn-number {
+  background: none;
+}
+.calculator .btn-number:hover, .calculator .btn-number:focus {
+  background-color: hsla(151, 71%, 48%, 0.65);
+  color: white;
+}
+.calculator .zero {
+  grid-column: span 2;
+}/*# sourceMappingURL=style.css.map */
