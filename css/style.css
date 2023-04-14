@@ -76,6 +76,7 @@ button {
 body {
   display: grid;
   place-content: center;
+  perspective: 1200px;
 }
 
 .calculator {

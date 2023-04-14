@@ -5,6 +5,8 @@ $clr-primary-light-hover: hsl(151, 71%, 48%, 0.65);
 body {
   display: grid;
   place-content: center;
+
+  perspective: 1200px;
 }
 
 .calculator {
