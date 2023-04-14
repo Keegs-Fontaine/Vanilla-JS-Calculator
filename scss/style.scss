@@ -17,6 +17,8 @@ body {
   border-radius: 2.5rem;
   overflow: hidden;
 
+  transition: 0.04s ease-in-out transform;
+
   .screen {
     height: 15.625rem;
 
