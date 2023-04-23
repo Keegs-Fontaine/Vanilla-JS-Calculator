@@ -114,11 +114,20 @@ body {
   height: 5rem;
   font-size: 2.2rem;
 }
-.calculator .btn-operation {
+.calculator .btn-operation,
+.calculator .clear,
+.calculator .btn-equals,
+.calculator .btn-special {
   background-color: hsl(151, 71%, 48%);
   color: white;
 }
-.calculator .btn-operation:hover, .calculator .btn-operation:focus {
+.calculator .btn-operation:hover, .calculator .btn-operation:focus,
+.calculator .clear:hover,
+.calculator .clear:focus,
+.calculator .btn-equals:hover,
+.calculator .btn-equals:focus,
+.calculator .btn-special:hover,
+.calculator .btn-special:focus {
   background-color: hsla(151, 71%, 48%, 0.65);
 }
 .calculator .btn-number {

@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- JS -->
-    <script src="js/rotate.js" defer></script>
+    <script src="js/rotate.js" type="module" defer></script>
+    <script src="js/calculator.js" type="module" defer></script>
     <title>Vite App</title>
   </head>
   <body>
     <main class="calculator">
       <section class="screen">
-        <div class="screen__top">25.4 +</div>
-        <div class="screen__bottom">764</div>
+        <div class="screen__top"></div>
+        <div class="screen__bottom"></div>
       </section>
       <section class="buttons">
-        <button class="btn-operation">C</button>
-        <button class="btn-operation">+/-</button>
-        <button class="btn-operation">%</button>
+        <button class="clear">C</button>
+        <button class="btn-special">+/-</button>
+        <button class="btn-special">%</button>
         <button class="btn-operation">÷</button>
         <button class="btn-number">7</button>
         <button class="btn-number">8</button>
@@ -37,7 +38,7 @@
         <button class="btn-operation">+</button>
         <button class="zero btn-number">0</button>
         <button class="btn-number">.</button>
-        <button class="btn-operation">=</button>
+        <button class="btn-equals">=</button>
       </section>
     </main>
   </body>
