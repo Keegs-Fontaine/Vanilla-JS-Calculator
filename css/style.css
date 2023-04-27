@@ -81,6 +81,7 @@ body {
 
 .calculator {
   width: 23.475rem;
+  aspect-ratio: 0.57;
   border: 0.35rem solid #333;
   box-shadow: 1.75rem -1.75rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 2.5rem;
