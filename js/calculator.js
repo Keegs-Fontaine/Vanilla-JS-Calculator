@@ -13,6 +13,10 @@ function clear() {
 }
 
 function operation(txt) {
+  if (topScreen.innerText !== "") {
+    equals();
+  }
+
   topScreen.innerText = bottomScreen.innerText + " " + txt;
   bottomScreen.innerText = "";
 }
